@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="450" prefWidth="700" style="-fx-background-color: #fff0f5;" stylesheets="@/styles/style_tree.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <Label layoutX="20.0" layoutY="20.0" prefHeight="20.0" prefWidth="220.0" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Admin Dashboard" textFill="#663399">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <VBox layoutX="16.0" layoutY="65.0" prefHeight="310.0" prefWidth="656.0">
+         <children>
+      
+                    <TreeView fx:id="groupedEventsTreeView" prefHeight="310.0" prefWidth="638.0" />
+         </children>
+      </VBox>
+        <Label fx:id="statusLabel" alignment="CENTER" layoutX="91.0" layoutY="392.0" prefWidth="560" style="-fx-text-fill: red;" />
+      <HBox layoutX="343.0" layoutY="17.0" prefHeight="26.0" prefWidth="330.0" spacing="30.0">
+         <children>
+            <Button fx:id="viewAddButton" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color:  #663399FF;" text="Add New Event" textFill="beige" />
+            <Button fx:id="viewOrdersButton" prefWidth="90" style="-fx-background-color:  #663399FF;" text="View Orders" textFill="beige" />
+            <Button fx:id="logoutButton" prefWidth="80" style="-fx-background-color:  #663399FF;" text="Logout" textFill="beige" />
+         </children>
+      </HBox>
+    </children>
+</Pane>

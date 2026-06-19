@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="450" prefWidth="700" style="-fx-background-color: #fff0f5;" stylesheets="@/styles/style_table.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <TableView fx:id="cartTableView" layoutX="20.0" layoutY="64.0" prefHeight="280" prefWidth="660">
+            <columns>
+                <TableColumn fx:id="colEventName" prefWidth="220" text="Event Name" />
+                <TableColumn fx:id="colDay" prefWidth="100" text="Day" />
+                <TableColumn fx:id="colQuantity" prefWidth="100" text="Quantity" />
+                <TableColumn fx:id="colPrice" prefWidth="100" text="Price ($)" />
+                <TableColumn fx:id="colRemove" prefWidth="80" text="Remove" />
+            </columns>
+        </TableView>
+
+        <Label fx:id="totalPriceLabel" layoutX="20.0" layoutY="383.0" prefWidth="300" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+
+        <Button fx:id="checkoutButton" layoutX="581.0" layoutY="379.0" style="-fx-background-color: #663399FF; -fx-text-fill: beige;" text="Checkout" />
+        <Button fx:id="backbutton" layoutX="489.0" layoutY="379.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #663399FF; -fx-text-fill: beige;" text="Back" />
+      <Label layoutX="20.0" layoutY="21.0" prefHeight="17.0" prefWidth="458.0" text="Shopping Cart " textAlignment="CENTER" textFill="#663399">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>

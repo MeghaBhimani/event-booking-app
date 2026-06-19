@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="450" prefWidth="700" style="-fx-background-color: #fff0f5;" stylesheets="@/styles/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+    <VBox alignment="CENTER" layoutX="115.0" layoutY="67.0" prefHeight="301.0" prefWidth="471.0" spacing="15">
+        <Label alignment="CENTER" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Update Event" textFill="#663399" />
+      <HBox prefHeight="26.0" prefWidth="461.0" spacing="10.0">
+         <children>
+            <Label prefHeight="29.0" prefWidth="69.0" text="Event Title:" />
+      
+              <TextField fx:id="titleField" editable="false" prefHeight="26.0" prefWidth="391.0" promptText="Event Title" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="461.0" spacing="10.0">
+         <children>
+            <Label prefHeight="29.0" prefWidth="69.0" text="Venue:" />
+              <TextField fx:id="venueField" prefHeight="26.0" prefWidth="394.0" promptText="Venue" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="461.0" spacing="10.0">
+         <children>
+            <Label prefHeight="29.0" prefWidth="69.0" text="Day:" />
+              <TextField fx:id="dayField" prefHeight="26.0" prefWidth="396.0" promptText="Day" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="461.0" spacing="10.0">
+         <children>
+            <Label prefHeight="29.0" prefWidth="69.0" text="Price:" />
+              <TextField fx:id="priceField" prefHeight="26.0" prefWidth="396.0" promptText="Price" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="461.0" spacing="10.0">
+         <children>
+            <Label prefHeight="29.0" prefWidth="69.0" text="Capacity:" />
+              <TextField fx:id="capacityField" prefHeight="26.0" prefWidth="398.0" promptText="Capacity" />
+         </children>
+      </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Button fx:id="updateButton" style="-fx-background-color:  #663399FF;" text="Update" textFill="beige" />
+            <Button fx:id="cancelButton" style="-fx-background-color:  #663399FF;" text="Cancel" textFill="beige" />
+        </HBox>
+    </VBox>
+   <Label fx:id="statusLabel" alignment="CENTER" layoutX="194.0" layoutY="368.0" maxWidth="580" prefHeight="17.0" prefWidth="313.0" textAlignment="CENTER" textFill="red" wrapText="true" />
+</Pane>

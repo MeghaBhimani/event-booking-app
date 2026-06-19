@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="700.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff0f5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/styles/style_table.css">
+    <children>
+        <Label fx:id="welcomeLabel" layoutX="40.0" layoutY="28.0" prefHeight="20.0" prefWidth="279.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Welcome, User!" textFill="#663399">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+
+        <TableView fx:id="eventTableView" layoutX="39.0" layoutY="74.0" prefHeight="300.0" prefWidth="626.0" />
+        <Label fx:id="statusLabel" layoutX="20.0" layoutY="370.0" prefHeight="20.0" prefWidth="560.0" textFill="RED" />
+      <HBox layoutX="219.0" layoutY="24.0" prefHeight="26.0" prefWidth="445.0" spacing="20.0">
+         <children>
+              <Button fx:id="viewCartButton" prefWidth="100" style="-fx-background-color:  #663399FF;" text="View Cart" textFill="beige" />
+              <Button fx:id="viewOrdersButton" prefWidth="90" style="-fx-background-color:  #663399FF;" text="View Orders" textFill="beige" />
+              <Button fx:id="changePasswordButton" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color:  #663399FF;" text="Change Password" textFill="beige" />
+      
+              <Button fx:id="logoutButton" prefWidth="80" style="-fx-background-color:  #663399FF;" text="Logout" textFill="beige" />
+         </children>
+      </HBox>
+    </children>
+</Pane>

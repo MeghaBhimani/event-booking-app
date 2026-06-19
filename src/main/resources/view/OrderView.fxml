@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="450" prefWidth="700" style="-fx-background-color: #fff0f5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/styles/style_table.css">
+
+    <children>
+        <TableView fx:id="orderTableView" layoutX="20.0" layoutY="64.0" prefHeight="280" prefWidth="660">
+            <columns>
+                <TableColumn fx:id="colOrderNumber" text="Order #" />
+                <TableColumn fx:id="colTimestamp" text="Date &amp; Time" />
+                <TableColumn fx:id="colEvent" text="Event Title" />
+                <TableColumn fx:id="colQuantity" text="No. of Seats" />
+                <TableColumn fx:id="colTotal" text="Total Price" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="exportButton" layoutX="581.0" layoutY="379.0" style="-fx-background-color: #663399FF; -fx-text-fill: beige;" text="Export Orders" />
+        <Button fx:id="backbutton" layoutX="489.0" layoutY="379.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #663399FF; -fx-text-fill: beige;" text="Back" />
+      <Label layoutX="20.0" layoutY="25.0" prefHeight="17.0" prefWidth="458.0" text="Orders" textAlignment="CENTER" textFill="#663399">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>
